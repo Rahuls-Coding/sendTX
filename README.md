@@ -10,4 +10,4 @@ An app that creates a solana account for the user and adds them into the solana 
 
 ## About this Repo
 
-This frontend of this project is nearly complete. The backend is still in development and will be updated soon.
+The frontend of this project is nearly complete. The backend is still in development and will be updated soon.
