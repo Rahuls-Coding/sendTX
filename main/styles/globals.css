@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+/* ::selection {
+    color:#c2f0c2
+} */
+
+:root {
+
+  --background: white;
+  --foreground: #121826;
+} 
+
+ @media (prefers-color-scheme: dark) {
+
+  html {
+
+    background: #121826;
+    font-family: 'Manrope', sans-serif;
+
+  }
+} 
+
+
+
+@layer components {
+  .container {
+    @apply max-w-7xl;
+  }
+  .container-wide {
+    @apply max-w-screen-2xl;
+  }
+  .container-copy {
+    @apply max-w-3xl;
+  }
+  .container-narrow {
+    @apply max-w-xl;
+  }
+  .ultratitle {
+    @apply text-6xl lg:text-7xl xl:text-8xl font-bold;
+  }
+  .title {
+    @apply text-5xl lg:text-6xl xl:text-7xl font-bold;
+  }
+  .subtitle {
+    @apply mt-3 text-3xl lg:text-4xl;
+  }
+  .headline {
+    @apply text-5xl mt-3 mb-3;
+  }
+  .subheadline {
+    @apply text-3xl mt-0 mb-3;
+  }
+  .eyebrow {
+    @apply text-gray-400 text-4xl lg:text-5xl uppercase mt-0 mb-2;
+  }
+  .lead {
+    @apply text-3xl lg:text-4xl my-2 lg:my-3;
+  }
+  .caption {
+    @apply text-gray-400 font-medium;
+  }
+  .btn {
+    @apply rounded-md bg-blue-300 dark:bg-blue-500 p-2 px-4;
+  }
+  .btn-color {
+    @apply rounded-md outline outline-[#dadde5] dark:outline dark:outline-[#384E5E] hover:bg-[#384E5E] hover:text-white dark:shadow-xl dark:shadow-[#384E5E]/50 shadow-xl p-2 text-sm;
+  }
+  .btn-styling {
+    @apply relative -my-2 -mx-3 rounded-lg px-3 py-2 text-sm dark:text-white text-gray-700 transition-colors delay-150 hover:text-gray-900 dark:hover:text-white hover:bg-black hover:bg-opacity-5 dark:hover:bg-white dark:hover:bg-opacity-10 hover:delay-[0ms];
+  }
+}
